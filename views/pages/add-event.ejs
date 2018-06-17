@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+<br>
+<div class="row" style="margin-left:30px;margin-right:30px">
+	<form action="http://localhost:4000/event/add" method="post" class="col s12">
+		<input type="hidden" name="ID" value="">
+
+		<div class="form-group row">
+			<label for="Name" class="col-2 col-form-label">Name</label>
+			<div class="col-10">
+				<input type="text" name="Name" value="" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="Quantity" class="col-2 col-form-label">Quantity</label>
+			<div class="col-10">
+				<input type="text" name="Quantity" value="" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="Value" class="col-2 col-form-label">Value</label>
+			<div class="col-10">
+				<input type="text" name="Value" value="" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="Value" class="col-2 col-form-label" style="color:#ffffff">Click here to submit</label>
+			<div class="col-10">
+				<input type="submit" name="submit" value="Save event" class="btn btn-primary btn-lg">
+			</div>
+		</div>
+	</form>
+</div>
+
+<% include ../partials/footer %>
